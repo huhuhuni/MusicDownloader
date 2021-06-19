@@ -1,3 +1,5 @@
+[English Readme](https://github.com/huhuhuni/MusicDownloader/blob/master/README.md)
+
 # MusicDownloader
 
 MusicDownloader是一款基于Python3的MP3资源下载程序，目前可以根据163音乐网站发布的歌曲ID下载相应的歌曲，功能简单，使用方便。
