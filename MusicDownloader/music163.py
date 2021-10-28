@@ -107,6 +107,9 @@ class music163_:
                 print(dowload_url)
                 if dowload_url == None or dowload_url == "":
                     raise Exception("can not find download_URL")
+                dowload_host = dowload_url.split('/')[2]
+                print(dowload_host)
+                download_header['host'] = dowload_host
             if dowload_url.endswith(".m4a") or dowload_url.endswith(".mp3"):
                 with requests.get(dowload_url, headers=download_header, timeout=10, stream=True) as response:
                     text = response.content
